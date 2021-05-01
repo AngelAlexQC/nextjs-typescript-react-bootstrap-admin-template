@@ -3,8 +3,15 @@ import React from "react";
 
 export const Navbar = () => {
   return (
+    /**
+     * @todo Head Navigation for authentication, search, notifications, etc.
+     */
+
     <nav>
-      <Link href="/">
+      <h6>
+        {"<<<"}Encabezado{">>>"}
+      </h6>
+      {/* <Link href="/">
         <a>Home</a>
       </Link>{" "}
       |{" "}
@@ -15,7 +22,7 @@ export const Navbar = () => {
       <Link href="/users">
         <a>Users List</a>
       </Link>{" "}
-      | <a href="/api/users">Users API</a>
+      | <a href="/api/users">Users API</a> */}
     </nav>
   );
 };

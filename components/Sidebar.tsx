@@ -1,7 +1,8 @@
 import React from "react";
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarContent, SidebarFooter, SidebarHeader } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
-import { FaGem, FaHeart } from "react-icons/fa";
+import { FaHeart, FaHome, FaRoad } from "react-icons/fa";
+import Link from "next/link";
 
 export const Sidebar = () => {
   return (
@@ -13,7 +14,12 @@ export const Sidebar = () => {
       </SidebarHeader>
       <SidebarContent>
         <Menu iconShape="square">
-          <MenuItem icon={<FaGem />}>Dashboard</MenuItem>
+          <Link href="/">
+            <MenuItem icon={<FaHome />}>Inicio</MenuItem>
+          </Link>
+          <Link href="/roads">
+            <MenuItem icon={<FaRoad />}>Rutas</MenuItem>
+          </Link>
           <SubMenu title="Components" icon={<FaHeart />}>
             <MenuItem>Component 1</MenuItem>
             <MenuItem>Component 2</MenuItem>
