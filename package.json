@@ -8,6 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.1.1",
     "bootstrap": "^4.6.0",
     "next": "^10.2.0",
     "react": "^17.0.2",
@@ -19,6 +20,7 @@
     "sass": "^1.32.12"
   },
   "devDependencies": {
+    "@types/google.maps": "^3.44.3",
     "@types/node": "^15.0.1",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
